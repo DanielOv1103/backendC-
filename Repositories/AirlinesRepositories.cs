@@ -2,8 +2,12 @@ using AirlineApi.Models;
 
 namespace AirlineApi.Repositories{
     public class AirlinesRepositories{
-        public List<AirlinesModel> GetAirlines(){
-            var airlines = new List<AirlinesModel>{
+
+        private readonly List<AirlinesModel> _airlines;
+
+        public AirlinesRepositories()
+        {
+             _airlines = new List<AirlinesModel>{
                 new AirlinesModel{ Id = 1, Name = "American Airlines", Code = "AA" },
                 new AirlinesModel{ Id = 2, Name = "Delta Airlines", Code = "DL" },
                 new AirlinesModel{ Id = 3, Name = "Emirates", Code = "EM" },
@@ -15,7 +19,44 @@ namespace AirlineApi.Repositories{
                 new AirlinesModel{ Id = 9, Name = "Singapore Airlines", Code = "SI" },
                 new AirlinesModel{ Id = 10, Name = "Qatar Airways", Code = "QA" },
             };
-            return airlines;
         }
+
+        public List<AirlinesModel> GetAirlines() => _airlines;
+
+        public AirlinesModel? GetAirlineById(int id) => _airlines.FirstOrDefault(x => x.Id == id);
+
+        public AirlinesModel CreateAirline(AirlinesModel airline)
+        {
+            int newId = (_airlines.Count > 0) ? _airlines.Max(x => x.Id).GetValueOrDefault() + 1 : 1;
+            airline.Id = newId;
+            _airlines.Add(airline);
+            return airline;
+        }
+
+        public bool UpdateAirline(AirlinesModel airline)
+        {
+            var airlineToUpdate = _airlines.FirstOrDefault(x => x.Id == airline.Id);
+            if (airlineToUpdate == null)
+            {
+                return false;
+            }
+
+            airlineToUpdate.Name = airline.Name;
+            airlineToUpdate.Code = airline.Code;
+            return true;
+        }
+
+        public bool DeleteAirline(int id)
+        {
+            var airlineToDelete = _airlines.FirstOrDefault(x => x.Id == id);
+            if (airlineToDelete == null)
+            {
+                return false;
+            }
+
+            _airlines.Remove(airlineToDelete);
+            return true;
+        }
+
     }
 }

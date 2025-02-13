@@ -12,7 +12,6 @@ namespace AirPortApi.Services
             _airportRepositories = airportRepositories;
         }
 
-
         public List<AirportsModel> GetAirports()
         {
             return _airportRepositories.GetAirports();

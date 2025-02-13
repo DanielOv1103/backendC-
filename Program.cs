@@ -1,5 +1,7 @@
 using AirPortApi.Services;
 using AirPortApi.Repositories;
+using AirlineApi.Services;
+using AirlineApi.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,8 @@ builder.Services
 
 builder.Services.AddScoped<AirportServices>();
 builder.Services.AddScoped<AirPortRepositories>();
+builder.Services.AddScoped<AirlinesServices>();
+builder.Services.AddScoped<AirlinesRepositories>();
 
 var app = builder.Build();
 app.UseCors("AllowAll");

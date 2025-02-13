@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AirPortApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e451fadad1c9fc735a4eec9245705fc3a82d26fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f19f5743bd94f4dc3d72c701a345cf700a5f4879")]
 [assembly: System.Reflection.AssemblyProductAttribute("AirPortApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AirPortApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
