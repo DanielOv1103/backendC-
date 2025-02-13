@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UNAP\\Desktop\\Daniel\\daniel\\AirPortApi\\AirPortApi.csproj": {}
+    "D:\\ARCHIVOS\\Documentos\\Senati\\SEMESTRE 5\\INGENIERIA DE SOFTWARE CON IA\\backendC-\\AirPortApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UNAP\\Desktop\\Daniel\\daniel\\AirPortApi\\AirPortApi.csproj": {
+    "D:\\ARCHIVOS\\Documentos\\Senati\\SEMESTRE 5\\INGENIERIA DE SOFTWARE CON IA\\backendC-\\AirPortApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNAP\\Desktop\\Daniel\\daniel\\AirPortApi\\AirPortApi.csproj",
+        "projectUniqueName": "D:\\ARCHIVOS\\Documentos\\Senati\\SEMESTRE 5\\INGENIERIA DE SOFTWARE CON IA\\backendC-\\AirPortApi.csproj",
         "projectName": "AirPortApi",
-        "projectPath": "C:\\Users\\UNAP\\Desktop\\Daniel\\daniel\\AirPortApi\\AirPortApi.csproj",
-        "packagesPath": "C:\\Users\\UNAP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNAP\\Desktop\\Daniel\\daniel\\AirPortApi\\obj\\",
+        "projectPath": "D:\\ARCHIVOS\\Documentos\\Senati\\SEMESTRE 5\\INGENIERIA DE SOFTWARE CON IA\\backendC-\\AirPortApi.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "D:\\ARCHIVOS\\Documentos\\Senati\\SEMESTRE 5\\INGENIERIA DE SOFTWARE CON IA\\backendC-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UNAP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

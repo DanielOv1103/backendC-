@@ -1,26 +1,46 @@
 using AirPortApi.Models;
 using AirPortApi.Repositories;
 
-namespace AirPortApi.Services{
-    public class AirportServices{
+namespace AirPortApi.Services
+{
+    public class AirportServices
+    {
         private readonly AirPortRepositories _airportRepositories;
 
-        public AirportServices(AirPortRepositories airportRepositories){
+        public AirportServices(AirPortRepositories airportRepositories)
+        {
             _airportRepositories = airportRepositories;
         }
 
-        public List<AirportsModel> GetAirports(){
+
+        public List<AirportsModel> GetAirports()
+        {
             return _airportRepositories.GetAirports();
         }
 
-        public AirportsModel GetAirportById(int id){
+        public List<AirportsModel> GetAirportsModels()
+        {
+            return _airportRepositories.GetAirports();
+        }
+
+        public AirportsModel? GetAirportById(int id)
+        {
             return _airportRepositories.GetAirportById(id);
         }
-        
-        public void CreateAirport(AirportsModel airport) => _airportRepositories.CreateAirport(airport);
 
-        public void UpdateAirport(AirportsModel airport) => _airportRepositories.UpdateAirport(airport);
+        public AirportsModel CreateAirport(AirportsModel airport)
+        {
+            return _airportRepositories.CreateAirport(airport); // Retorna el aeropuerto creado
+        }
 
-        public void DeleteAirport(int id) => _airportRepositories.DeleteAirport(id);
+        public bool UpdateAirport(AirportsModel airport)
+        {
+            return _airportRepositories.UpdateAirport(airport);
+        }
+
+        public bool DeleteAirport(int id)
+        {
+            return _airportRepositories.DeleteAirport(id);
+        }
     }
 }
